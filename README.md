@@ -63,3 +63,95 @@ Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework
 ## Copyright and License
 
 Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE) license.
+
+
+******************************************
+
+El Consultorio (Lo tienes CRUDo)
+Sergi Virgili
+24.10.2020
+Desarrollar una aplicación "CRUD" Web en PHP que permita pedir cita a los desarrolladores y equipos para solucionar problemas técnicos con la ayuda del formador o CTO.
+html
+php
+MySQL
+Git
+Métodos agiles
+Kanban
+SQL
+Pédagogie active
+Projet
+Marcos de competencias
+Desarrollador web y web móvil
+ 
+Contexto del proyecto
+El Consultorio
+Nos encontramos en una empresa de desarrollo y necesitamos una aplicación que permita pedir cita al CTO para resolver problemas técnicos de los equipos de desarrollo.
+De momento vamos a desarrollar un producto mínimo viable (MVP). Empezaremos con un código spaguetti, en PHP e intentaremos llegar a una aplicación orientada a objetos usando el patrón MVC (Modelo, Vista, Controlador).
+Requisitos Funcionales:
+La aplicación constará de al menos 3 páginas
+Una página para la lista con todas las citas previstas.
+Una página con un formulario para crear una nueva cita.
+Una página para editar una cita concreta.
+Páginas:
+Lista: Las citas beben aparecer por orden de creación con:
+El nombre del coder o del equipo.
+El tema de consulta
+Fecha y hora de la creación de la cita
+Las citas se podrán eliminar.
+Podremos acceder a la edición de cada cita, y a la página de creación de una cita nueva.
+Crear nueva cita:
+Formulario con los campos necesarios obligatorios
+Botón para borrar los campos
+Botón para cancelar y volver a la lista principal
+Botón para enviar la información
+Editar cita:
+Formulario con los campos necesarios obligatorios.
+Los campos deben tener la información de la cita a editar
+Boton cancelar, Botón de enviar
+La aplicación deberá ser responsiva.
+Requisitos Técnicos:
+Aplicación de tipo CRUD (Create, Read, Update, Delete)
+Deberá ser Orientada a objetos con el patrón MVC
+Deberá estar en un servidor gratuito en producción.
+Se debe usar Git con buenas prácticas en los commits.
+El repositorio debe contener un Readme con explicación del proyecto, y una explicación de cómo instalar o ejecutar la aplicación.
+Extras:
+Añadir tests unitarios con PhpUnit.
+Añadir Tests End2End con Selenium.
+Tecnologías:
+Frontend: HTML, CSS, SCSS - Opcional: Framework de CSS.
+Backend: PHP.
+Bases de datos: MySQL.
+No se pueden usar otras librerias o frameworks que los espicificados.
+Entrega:
+Un link a un repositorio de github
+Link a url del proyecto en producción
+Presentación en diapositivas + Link
+Demo y code review
+Presentación:
+¿Qué he aportado?
+¿Qué he aprendido?
+¿Qué obstáculos he tenido?
+¿Cómo lo he resuelto?
+Tecnologías y herramientas
+Planificación + kanban + Puntos de historia
+Core Skills:
+Semántica HTML
+Buenas Practicas en CSS, SCSS
+Capacidad de Abstración en clases y objetos.
+Buenas prácticas OOP - Encapsulación, Herencia.
+Patrones de diseño - Modelo Vista Controlador (MVC).
+Implementar la aplicación en un servidor en producción.
+Uso de Git.
+Desarrollo basado en historias de usuario y tareas (Kanban).
+Comunicación y autoevaluación.
+​
+​
+Modalidades pedagógicas
+Desarrollo en equipo Scrum
+1 Sprint de 2 semanas
+Modalidades de evaluación
+Coevaluación y Autoevaluación. Demo + Presentación + CodeReview
+Entregables
+Link al código en un repositorio on-line - Link a la web en producción - Link a la Presentación de la demo.
+
