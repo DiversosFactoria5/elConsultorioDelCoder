@@ -67,11 +67,8 @@ Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://g
 
 ******************************************
 
-El Consultorio (Lo tienes CRUDo)
 
-Sergi Virgili
-
-24.10.2020
+## El Consultorio (Lo tienes CRUDo)
 
 Desarrollar una aplicación "CRUD" Web en PHP que permita pedir cita a los desarrolladores y equipos para solucionar problemas técnicos con la ayuda del formador o CTO.
 
@@ -93,22 +90,26 @@ Pédagogie active
 
 Projet
 
-Marcos de competencias
+
+## Marcos de competencias
 
 Desarrollador web y web móvil
 
 
 
-Contexto del proyecto
 
-El Consultorio
+## Contexto del proyecto
+
+
+## El Consultorio
 
 Nos encontramos en una empresa de desarrollo y necesitamos una aplicación que permita pedir cita al CTO para resolver problemas técnicos de los equipos de desarrollo.
 
 De momento vamos a desarrollar un producto mínimo viable (MVP). Empezaremos con un código spaguetti, en PHP e intentaremos llegar a una aplicación orientada a objetos usando el 
 patrón MVC (Modelo, Vista, Controlador).
 
-Requisitos Funcionales:
+
+## Requisitos Funcionales:
 
 La aplicación constará de al menos 3 páginas
 
@@ -152,7 +153,8 @@ Boton cancelar, Botón de enviar
 
 La aplicación deberá ser responsiva.
 
-Requisitos Técnicos:
+
+## Requisitos Técnicos:
 
 Aplicación de tipo CRUD (Create, Read, Update, Delete)
 
@@ -170,7 +172,8 @@ Añadir tests unitarios con PhpUnit.
 
 Añadir Tests End2End con Selenium.
 
-Tecnologías:
+
+## Tecnologías:
 
 Frontend: HTML, CSS, SCSS - Opcional: Framework de CSS.
 
@@ -180,7 +183,8 @@ Bases de datos: MySQL.
 
 No se pueden usar otras librerias o frameworks que los espicificados.
 
-Entrega:
+
+## Entrega:
 
 Un link a un repositorio de github
 
@@ -190,7 +194,8 @@ Presentación en diapositivas + Link
 
 Demo y code review
 
-Presentación:
+
+## Presentación:
 
 ¿Qué he aportado?
 
@@ -204,7 +209,8 @@ Tecnologías y herramientas
 
 Planificación + kanban + Puntos de historia
 
-Core Skills:
+
+## Core Skills:
 
 Semántica HTML
 
@@ -228,19 +234,19 @@ Comunicación y autoevaluación.
 
 ​
 
-Modalidades pedagógicas
+
+## Modalidades pedagógicas
 
 Desarrollo en equipo Scrum
 
 1 Sprint de 2 semanas
 
-Modalidades de evaluación
+
+## Modalidades de evaluación
 
 Coevaluación y Autoevaluación. Demo + Presentación + CodeReview
 
-Entregables
+
+## Entregables
 
 Link al código en un repositorio on-line - Link a la web en producción - Link a la Presentación de la demo.
-
-
-
