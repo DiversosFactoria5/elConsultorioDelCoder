@@ -1,0 +1,81 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 12, 2021 at 09:15 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `consultant`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `appointments`
+--
+
+CREATE TABLE `appointments` (
+  `id` int(50) NOT NULL,
+  `coder` varchar(50) NOT NULL,
+  `issue` varchar(200) NOT NULL,
+  `date_time` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `appointments`
+--
+
+INSERT INTO `appointments` (`id`, `coder`, `issue`, `date_time`) VALUES
+(4, 'Mevoamata', 'Design', '2021-05-14 08:00:00'),
+(5, 'Wiiii', 'Presentation', '2021-05-14 09:00:00'),
+(6, 'Jael Sparrow', 'Copyrights', '2021-05-14 10:00:00'),
+(7, 'Laviin Compae', 'If statement', '2021-05-14 11:00:00'),
+(8, 'DJ Charquito', 'Pasteles & Bizcocho', '2021-05-14 12:00:00'),
+(9, 'Abdulha', '', '2021-05-15 08:00:00'),
+(10, 'Alexandra', '', '2021-05-15 09:00:00'),
+(11, 'Andrea Suarez', 'Cats', '2021-05-15 10:00:00'),
+(12, 'Anya', 'Espacio', '2021-05-15 11:00:00'),
+(13, 'Armando', 'Iconos retro', '2021-05-15 12:00:00'),
+(14, 'Berta', '', '2021-05-16 08:00:00'),
+(15, 'David Sanchez', '', '2021-05-16 09:00:00'),
+(16, 'David Hermoso', 'Simpsons', '2021-05-16 10:00:00'),
+(17, 'Diego Gonzalez', '', '2021-05-16 11:00:00'),
+(18, 'Franco', 'Cejas', '2021-05-16 12:00:00');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `appointments`
+--
+ALTER TABLE `appointments`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `appointments`
+--
+ALTER TABLE `appointments`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
