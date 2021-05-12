@@ -44,8 +44,8 @@
                                         <!-- DataTales Example -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Task appointment</h6>
-                                <a href="./addTask.php"><button type="button" class="btn btn-success">Add Task</button></a>
+                                <h1 class="m-0 font-weight-bold text-primary titulo-pagina ">Task appointment</h1>
+                                <a href="./addTask.php"><button type="button" class="btn btn-outline-success go-add-task">Add Task</button></a>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -68,14 +68,14 @@
                                                 <td>61</td>
                                                 <td>
                                                     <div class="dropdown mb-4">
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                                        <button class="btn btn-outline-primary dropdown-toggle" type="button"
                                                             id="dropdownMenuButton" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
                                                             Action
                                                         </button>
                                                         <div class="dropdown-menu animated--fade-in"
                                                             aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="./edit.php">Edit</a>
+                                                            <a id="button-edit" class="dropdown-item" href="./edit.php">Edit</a>
                                                             <a class="dropdown-item" href="#">Delete</a>
                                                         </div>
                                                     </div>
@@ -90,7 +90,7 @@
                                                 <td>62</td>
                                                 <td>
                                                     <div class="dropdown mb-4">
-                                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                                        <button class="btn btn-outline-primary dropdown-toggle" type="button"
                                                             id="dropdownMenuButton" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
                                                             Action
