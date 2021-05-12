@@ -5,7 +5,7 @@ namespace App;
 use PDO;
 use PDOException;
 
-class OpenDb
+class ConexionBD
 {
 
     public $mysql;
@@ -37,7 +37,7 @@ class OpenDb
         $conexion = new PDO("mysql:host=$servidor;dbname=$nameDatabase", $usuario, $password);      
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
+        
     }
 
     

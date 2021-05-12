@@ -41,7 +41,10 @@
                                     <tbody>
 
 <?php
-include "../class/OpenDB.php";
+
+require("../class/OpenDB.php");
+
+$test = new App\ConexionBD();
 
 $sql = "SELECT * FROM appointments";
 $query = $conexion -> prepare($sql); 
