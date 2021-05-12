@@ -37,6 +37,7 @@ class ConexionBD
         $conexion = new PDO("mysql:host=$servidor;dbname=$nameDatabase", $usuario, $password);      
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+        return $conexion;
         
     }
 

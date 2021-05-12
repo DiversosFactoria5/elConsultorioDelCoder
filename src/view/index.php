@@ -46,12 +46,15 @@ require("../class/OpenDB.php");
 
 $test = new App\ConexionBD();
 
-$sql = "SELECT * FROM appointments";
+$coders = $test->mysql->query("select * FROM appointments");
+
+/*$sql = "SELECT * FROM appointments";
 $query = $conexion -> prepare($sql); 
 $query -> execute(); 
-$results = $query -> fetchAll(PDO::FETCH_OBJ); 
+$results = $query -> fetchAll(PDO::FETCH_OBJ); */
 
-if ($query -> rowCount() > 0) {
+if ($coders -> rowCount() > 0) {
+    $results = $coders -> fetchAll(PDO::FETCH_OBJ);
     foreach ($results as $result) {
 
     echo <<<TAG
