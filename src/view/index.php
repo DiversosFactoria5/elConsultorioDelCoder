@@ -23,7 +23,7 @@
 
 <body id="page-top">
 
-    <body id="page-top">
+    
 
         <div id="wrapper">
 
@@ -44,7 +44,13 @@
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+
+
+
+
+
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
                                                 <th>Date / time</th>
@@ -55,48 +61,54 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>2011/04/25 12:51:30
-                                                </td>
-                                                <td>Tiger Nixon</td>
-                                                <td>Front end</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="dropdown mb-4">
-                                                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </button>
-                                                        <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                                            <a id="button-edit" class="dropdown-item" href="./edit.php">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
 
-                                            </tr>
-                                            <tr>
-                                                <td>2011/04/25 12:51:30
-                                                </td>
-                                                <td>Garrett Winter</td>
-                                                <td>Back end</td>
-                                                <td>62</td>
-                                                <td>
-                                                    <div class="dropdown mb-4">
-                                                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </button>
-                                                        <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
 
-                                            </tr>
+       
 
+        <?php
+         include "../class/OpenDB.php";
+
+$sql = "SELECT * FROM appointments";
+$query = $conexion -> prepare($sql); 
+$query -> execute(); 
+$results = $query -> fetchAll(PDO::FETCH_OBJ); 
+
+if ($query -> rowCount() > 0) {
+    foreach ($results as $result) {
+
+    echo <<<TAG
+    <tr>
+        <td>{$result ->date_time}</td>
+        <td>{$result -> coder}</td>
+        <td>{$result -> issue}</td>
+        <td>{$result -> id}</td>
+        <td>
+            <div class="dropdown mb-4">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                </button>
+                <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
+                    <a id="button-edit" class="dropdown-item" href="./edit.php">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    
+    TAG;
+    }
+}
+
+include "../class/CloseDB.php";
+
+?>
                                         </tbody>
                                     </table>
-                                </div>
+
+    
+    
+    
+                                    </div>
                             </div>
                         </div>
 
@@ -123,9 +135,9 @@
         <a class="scroll-to-top rounded" href="#page-top">
             <i class="fas fa-angle-up"></i>
         </a>
-
-
-
+    
+    
+    
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
         <script src="../../vendorJs/jquery/jquery.min.js"></script>
         <script src="../../vendorJs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -140,7 +152,7 @@
 
         <script src="../../vendorJs/datatables/jquery.dataTables.min.js"></script>
         <script src="../../vendorJs/datatables/dataTables.bootstrap4.min.js"></script>
-
-    </body>
+    
+</body>
 
 </html>
